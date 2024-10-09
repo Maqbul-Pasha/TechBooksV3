@@ -27,4 +27,22 @@ form {
 label, .vspace {
     margin-top: 10px;
 }
-        
+
+/* Set background color for body with increased pink tint */
+body {
+    background-color: #ffccd5; /* Slightly stronger pink background */
+}
+
+/* Set background color for navbar to light red */
+header {
+    background-color: #ff6666; /* Light red background for navbar */
+}
+
+/* Set navbar text color to black */
+.navbar .nav-link {
+    color: #000000 !important; /* Black text for the navbar links */
+}
+
+.navbar .navbar-brand {
+    color: #000000 !important; /* Black text for the brand */
+}

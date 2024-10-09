@@ -28,3 +28,4 @@ C:\webdevserver\Chapter_3\TechBooksV3.3\TechBooks.Data\obj\Debug\net8.0\TechBook
 C:\webdevserver\Chapter_3\TechBooksV3.3\TechBooks.Data\obj\Debug\net8.0\refint\TechBooks.Data.dll
 C:\webdevserver\Chapter_3\TechBooksV3.3\TechBooks.Data\obj\Debug\net8.0\TechBooks.Data.pdb
 C:\webdevserver\Chapter_3\TechBooksV3.3\TechBooks.Data\obj\Debug\net8.0\ref\TechBooks.Data.dll
+C:\webdevserver\Chapter_3\TechBooksV3.3\TechBooks.Data\obj\Debug\net8.0\TechBooks.Data.sourcelink.json

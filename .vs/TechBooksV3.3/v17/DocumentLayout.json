@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{74104C39-46EF-4D51-9ADD-F51E2E7E2065}|TechBooks.WebUI\\TechBooks.WebUI.csproj|c:\\webdevserver\\chapter_3\\techbooksv3.3\\techbooks.webui\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{74104C39-46EF-4D51-9ADD-F51E2E7E2065}|TechBooks.WebUI\\TechBooks.WebUI.csproj|solutionrelative:techbooks.webui\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74104C39-46EF-4D51-9ADD-F51E2E7E2065}|TechBooks.WebUI\\TechBooks.WebUI.csproj|c:\\webdevserver\\chapter_3\\techbooksv3.3\\techbooks.webui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74104C39-46EF-4D51-9ADD-F51E2E7E2065}|TechBooks.WebUI\\TechBooks.WebUI.csproj|solutionrelative:techbooks.webui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BF25FDDB-4EA4-40FB-9845-C94DA1432F82}|TechBooks.Data\\TechBooks.Data.csproj|c:\\webdevserver\\chapter_3\\techbooksv3.3\\techbooks.data\\techbooks.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{BF25FDDB-4EA4-40FB-9845-C94DA1432F82}|TechBooks.Data\\TechBooks.Data.csproj|solutionrelative:techbooks.data\\techbooks.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
@@ -42,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": 22,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,8 +138,34 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TechBooks.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TechBooks.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T02:56:33.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TechBooks.Data",
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.WebUI\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "TechBooks.WebUI\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.WebUI\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "TechBooks.WebUI\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-09T02:56:15.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TechBooks.Data.csproj",
               "DocumentMoniker": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.Data\\TechBooks.Data.csproj",
               "RelativeDocumentMoniker": "TechBooks.Data\\TechBooks.Data.csproj",
               "ToolTip": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.Data\\TechBooks.Data.csproj",
@@ -143,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AddOrUpdate.cshtml",
               "DocumentMoniker": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.WebUI\\Views\\ManageBooks\\AddOrUpdate.cshtml",
               "RelativeDocumentMoniker": "TechBooks.WebUI\\Views\\ManageBooks\\AddOrUpdate.cshtml",
@@ -151,38 +185,35 @@
               "RelativeToolTip": "TechBooks.WebUI\\Views\\ManageBooks\\AddOrUpdate.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T02:37:05.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T02:37:05.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TechBooks.WebUI",
+              "DocumentIndex": 4,
+              "Title": "TechBooks.WebUI.csproj",
               "DocumentMoniker": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.WebUI\\TechBooks.WebUI.csproj",
               "RelativeDocumentMoniker": "TechBooks.WebUI\\TechBooks.WebUI.csproj",
               "ToolTip": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.WebUI\\TechBooks.WebUI.csproj",
               "RelativeToolTip": "TechBooks.WebUI\\TechBooks.WebUI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-09T02:37:04.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T02:37:04.862Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TechBooks.Models",
+              "DocumentIndex": 5,
+              "Title": "TechBooks.Models.csproj",
               "DocumentMoniker": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.Models\\TechBooks.Models.csproj",
               "RelativeDocumentMoniker": "TechBooks.Models\\TechBooks.Models.csproj",
               "ToolTip": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.Models\\TechBooks.Models.csproj",
               "RelativeToolTip": "TechBooks.Models\\TechBooks.Models.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-09T02:37:03.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T02:37:03.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "EnableAuthenticator.cshtml",
               "DocumentMoniker": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.WebUI\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
               "RelativeDocumentMoniker": "TechBooks.WebUI\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
@@ -194,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "qr.js",
               "DocumentMoniker": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.WebUI\\wwwroot\\js\\qr.js",
               "RelativeDocumentMoniker": "TechBooks.WebUI\\wwwroot\\js\\qr.js",
@@ -206,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.WebUI\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "TechBooks.WebUI\\ScaffoldingReadMe.txt",
@@ -218,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "STEP BY STEP - IDENTITY_2FA.txt",
               "DocumentMoniker": "C:\\webdevserver\\Chapter_3\\TechBooksV3.3\\TechBooks.WebUI\\STEP BY STEP - IDENTITY_2FA.txt",
               "RelativeDocumentMoniker": "TechBooks.WebUI\\STEP BY STEP - IDENTITY_2FA.txt",
@@ -226,8 +257,7 @@
               "RelativeToolTip": "TechBooks.WebUI\\STEP BY STEP - IDENTITY_2FA.txt",
               "ViewState": "AgIAADAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-07T18:26:56.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-07T18:26:56.685Z"
             }
           ]
         },

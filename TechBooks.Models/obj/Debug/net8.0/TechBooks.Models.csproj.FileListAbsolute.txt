@@ -22,3 +22,4 @@ C:\webdevserver\Chapter_3\TechBooksV3.3\TechBooks.Models\obj\Debug\net8.0\TechBo
 C:\webdevserver\Chapter_3\TechBooksV3.3\TechBooks.Models\obj\Debug\net8.0\refint\TechBooks.Models.dll
 C:\webdevserver\Chapter_3\TechBooksV3.3\TechBooks.Models\obj\Debug\net8.0\TechBooks.Models.pdb
 C:\webdevserver\Chapter_3\TechBooksV3.3\TechBooks.Models\obj\Debug\net8.0\ref\TechBooks.Models.dll
+C:\webdevserver\Chapter_3\TechBooksV3.3\TechBooks.Models\obj\Debug\net8.0\TechBooks.Models.sourcelink.json
