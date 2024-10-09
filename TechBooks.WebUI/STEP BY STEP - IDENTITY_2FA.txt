@@ -1,0 +1,56 @@
+To configure Two-factor authentication (2FA) in ASP.NET IDENTITY:
+
+*** STEP 1 ***
+- Right click the Views folder, Add -> View...
+	- In the Add New Scaffolded Item, select "Identity" in the left side, then click "Identity" item, and click Add.
+	- In the Add Identity window, check "Account\Manage\EnableAuthenticator". Select the context class and click Add.
+	-  In the Solution Explorer window, delete the following file:
+	- TechBooks.WebUI\Areas\Identity\Data\TechBooksContext.cs
+
+*** STEP 2 ***
+- Right click the TechBooks.WebUI project, Add -> Client-Side Library...
+	- In the dialog box, search for "qrcodejs"
+	- Add all qrcodejs library files in the following target location: "wwwroot/lib/qrcodejs/"
+
+
+*** STEP 3 ***
+- In the Solution Explorer window, expand "TechBooks.WebUI\wwwroot\js\"
+	- Right click the js folder, Add -> New Item...
+	- Search for "javascript". Select JavaScript File, give the name "qr.js", then click Add.
+
+
+*** STEP 4 ***
+- In the qr.js file, add the following code:
+
+	window.addEventListener("load", () => {
+		const uri = document.getElementById("qrCodeData").getAttribute('data-url');
+		new QRCode(document.getElementById("qrCode"),
+			{
+				text: uri,
+				width: 150,
+				height: 150
+			});
+	});
+
+
+*** STEP 5 ***
+- In the Solution Explorer window, expand TechBooks.WebUI\Areas\Identity\Pages\Account\Manage
+	- Open the EnableAuthenticator.cshtml file. Scroll all the way down and make sure you add qrcode.js and qr.js to the Scripts section:
+
+	@section Scripts {
+		<partial name="_ValidationScriptsPartial" />
+
+		<script type="text/javascript" src="~/lib/qrcodejs/qrcode.js"></script>
+		<script type="text/javascript" src="~/js/qr.js"></script>
+	}
+
+
+*** STEP 6 ***
+- Run the application. 
+	- After signing in, navigate to "https://localhost:YOUR_PORT_NUMBER/Identity/Account/Manage"
+	- Select "Two-factor authentication", then "Set up authenticator app"
+	- You should see the QR code image now.
+
+
+SOURCE:
+https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity-enable-qrcodes?view=aspnetcore-8.0

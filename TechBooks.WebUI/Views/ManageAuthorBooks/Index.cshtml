@@ -1,0 +1,75 @@
+﻿            @model TechBooks.WebUI.Models.AuthorBooksViewModel
+
+@{
+    ViewData["Title"] = $"Manage {Model.Author.Name} Books";
+}
+
+@if (Model.NonAssociatedBooks.Any())
+{
+    <form method="post" asp-action="Add">
+        <input type="hidden" name="authorId" value="@Model.Author.AuthorId" />
+        <select name="bookId" onchange="selectChange(this)">
+            <option>(Select a book to add to this author)</option>
+            @foreach (var book in Model.NonAssociatedBooks)
+            {
+                <option value="@book.BookId">
+                    @book.Title
+                </option>
+            }
+        </select>
+        <button id="btnAdd" type="submit" class="btn btn-primary" disabled>Click here to Add</button>
+    </form>
+}
+else
+{
+    if (Model.AssociatedBooks.Any())
+    {
+        <p>This author is associated with all books from our catalog.</p>
+    }
+}
+
+@if (Model.AssociatedBooks.Any())
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Author of:</th>
+                <th>
+
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model.AssociatedBooks)
+            {
+                <tr>
+                    <td>
+                        <input type="text" value="@book.Title" style="width:350px;" class="form-control classname" readonly />
+                    </td>
+                    <td>
+                        <form method="post" asp-action="Remove">
+                            <input type="hidden" name="authorId" value="@Model.Author.AuthorId" />
+                            <input type="hidden" name="bookId" value="@book.BookId" />
+                            <input type="submit" value="Remove" class="btn btn-danger" onclick="return removeConfirmation();" />
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>This author is not associated with any Book.</p>
+}
+
+@section Scripts {
+    <script>
+        function selectChange(select) {
+            if (select.selectedIndex == 0)
+                document.getElementById("btnAdd").disabled = "disabled";
+            else
+                document.getElementById("btnAdd").disabled = "";
+        }
+    </script>
+}

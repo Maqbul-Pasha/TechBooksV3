@@ -1,0 +1,86 @@
+﻿@model IEnumerable<TechBooks.Models.Book>
+
+@{
+    ViewData["Title"] = "Manage Books";
+}
+
+<p>
+    <a asp-action="AddOrUpdate" class="btn btn-primary">Click here to Add</a>
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BookId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+            @if (item.Thumbnail != null && item.Thumbnail.Length > 0)
+            {
+                <img src="data:image/jpeg;base64,@Convert.ToBase64String(item.Thumbnail)"
+                     alt="Book Image" width="50" height="50"
+                     class="img-thumbnail"
+                     style="cursor:pointer;"
+                     onclick="openImageModal(@item.BookId)"
+                     data-bs-toggle="modal" data-bs-target="#imageModal" />
+            }
+            </td>
+            <td>
+                @item.BookId
+            </td>
+            <td>
+                @item.Title
+            </td>
+            <td>
+                @item.Category.Description
+            </td>
+            <td>
+                <a asp-action="AddOrUpdate" asp-route-id=@item.BookId class="btn btn-outline-primary">Update</a>
+                <a asp-controller="ManageBookAuthors" asp-action="Index" asp-route-id="@item.BookId" class="btn btn-outline-primary">Manage Book Authors</a>
+                <form method="post" asp-action="Remove">
+                    <input type="hidden" name="BookId" value="@item.BookId" />
+                    <input type="submit" value="Remove" class="btn btn-danger" onclick="return removeConfirmation();" />
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+
+<!-- Modal for showing larger image -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Book Image</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img id="modalImage" src="" alt="Book Image" class="img-fluid" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function openImageModal(bookId) {
+            let modalImage = document.getElementById("modalImage");
+            modalImage.src = "/ManageBooks/GetFullImage?bookId=" + bookId;
+        }
+    </script>
+}
+
